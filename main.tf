@@ -46,7 +46,7 @@ resource "azurerm_kubernetes_cluster" "main" {
   }
 
   key_vault_secrets_provider {
-    secret_rotation_enabled = false
+    secret_rotation_enabled = true
   }
 
   network_profile {
